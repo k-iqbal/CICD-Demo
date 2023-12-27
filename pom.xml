@@ -32,11 +32,12 @@
 				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
+						<server>${server}</server>
 						<muleVersion>${app.runtime}</muleVersion>
 						<username>${username}</username>
 						<password>${password}</password>
-						<applicationName>cicd-using-azure-apdec26</applicationName>
-						<environment>Dev</environment>
+						<applicationName>${app.name}</applicationName>
+						<environment>${environment}</environment>
 						<region>us-east-2</region>
 						<workers>1</workers>
 						<workerType>MICRO</workerType>
