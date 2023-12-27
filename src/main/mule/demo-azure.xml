@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="demo-azureFlow" doc:id="f981d78e-a36a-4c1f-9588-2e6007d7bbf2" >
 		<http:listener doc:name="GET /hello" doc:id="852297da-8ca4-433e-9ed3-7169fa90a214" config-ref="HTTP_Listener_config" path="/hello"/>
 
-		<set-payload value='Hello Mule Azure CICD minor2' doc:name="Set Payload" doc:id="7c52797a-afd7-4504-b9e5-7ea68ff09268" />
+		<set-payload value='Hello Mule Azure CICD minor 3' doc:name="Set Payload" doc:id="7c52797a-afd7-4504-b9e5-7ea68ff09268" />
 
 
 	</flow>
