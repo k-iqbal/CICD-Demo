@@ -12,7 +12,7 @@ trigger:
     - pom.xml
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'ubuntu-latest'
 variables:
 - group: Azure-Variable-Group
 - name: MAVEN_CACHE_FOLDER
@@ -52,4 +52,4 @@ steps:
     mavenVersionOption: 'Default'
     effectivePomSkip: true
     sonarQubeRunAnalysis: false
-    goals: 'clean install package deploy $(MAVEN_OPTS)  -DmuleDeploy -Dserver=$(server) -Denvironment=$(environment) -Dworker=$(worker) -DworkerType=$(workerType) -DmuleVersion=$(app.runtime) -DappName=$(appName)'
+    goals: 'clean install package deploy $(MAVEN_OPTS)  -DmuleDeploy -Dserver=$(server) -Denvironment=$(environment) -Dworker=$(worker) -DworkerType=$(workerType) -Dapp.runtime=$(app.runtime) -Dapp.name=$(app.name)'
